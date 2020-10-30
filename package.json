@@ -1,0 +1,20 @@
+{
+  "name": "coursera-backend_with_nodejs",
+  "version": "1.0.0",
+  "description": "Simple Node Examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akhie/Coursera-Backend_with_Nodejs.git"
+  },
+  "author": "Akhilesh Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akhie/Coursera-Backend_with_Nodejs/issues"
+  },
+  "homepage": "https://github.com/Akhie/Coursera-Backend_with_Nodejs#readme"
+}
