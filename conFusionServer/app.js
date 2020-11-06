@@ -4,11 +4,25 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//Route files
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dishRouter = require('./routes/dishRouter');
 var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
+
+//Models
+const Dishes = require('./models/dishes');
+
+// Connection with Database
+const mongoose = require('mongoose');
+const url = 'mongodb+srv://Akhilesh:Akhi1234@cluster0.6fyyy.mongodb.net/conFusion?retryWrites=true&w=majority';
+const connect = mongoose.connect(url);
+
+connect.then((db) => {
+  console.log("Connected correctly to server");
+}, (err) => { console.log(err); });
+
 
 var app = express();
 
