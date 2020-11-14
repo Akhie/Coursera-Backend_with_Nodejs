@@ -29,7 +29,7 @@ exports.jwtPassport = passport.use(new JwtStrategy(opts,
                 return done(err, false);
             }
             else if (user) {
-                return done(null, user);
+                return done(null, user); // return req.user field in body
             }
             else {
                 return done(null, false);
